@@ -1,0 +1,133 @@
+body {
+	background-color: #474747;
+	margin: 0px;
+	border: 0px;
+	font-size: 100%;
+}
+
+#header h1 {
+	text-align: center;
+	color: white;
+	font: bold 2.63em Bahnschrift, sans-serif;
+}
+
+nav ul {
+	clear: both;
+	display: flex;
+	margin: 0px;
+	border: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	justify-content: center;
+	background-color: #A60B43;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav a:link, a:visited, a:active {
+	display: list-item;
+	padding: 5px 25px 5px 25px;
+	margin: 0px 25px 0px 25px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #C3BABA;
+	text-align: center;
+	width: 198px;
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	color: black;
+}
+
+#homepage img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+	border-radius: 8px 8px 8px 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#homepage p {
+	 text-align: center;
+	 color: white;
+	 font: normal 1.5em Bahnschrift, sans-serif;
+	 padding-left: 18.5%;
+	 padding-right: 18.5%;
+}
+
+#dspage p {
+	float: left;
+	width: 50%;
+	padding-left: 3.25%;
+	color: white;
+	font: 1.125em Bahnschrift, sans-serif;
+}
+
+#dspage img {
+	float: right;
+	margin-right: 3.25%;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+	border-radius: 8px 8px 8px 8px;
+}
+
+#header2 h2 {
+	text-align: center;
+	color: white;
+	font: bold 1.875em Bahnschrift, sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 100%;
+	}
+	#homepage img {
+		width: 95%;
+		height: auto;
+	}
+	#homepage p {
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	nav li {
+		margin: 0.5px;
+		padding: 0px;
+	}
+	nav a:link, a:visited, a:active {
+		width: 400px;
+		margin: 0px;
+		font-style: bold;
+		font-size: 1.125em;
+	}
+	#dspage p {
+		float: none;
+		text-align: center;
+		font-size: 1.35em;
+		width: 90%;
+		padding: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#dspage img {
+		display: block;
+		float: none;
+		width: 90%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+}
